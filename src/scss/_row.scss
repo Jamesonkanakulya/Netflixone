@@ -1,0 +1,36 @@
+.row {
+  margin-left: 20px;
+  color: white;
+
+  .row_poster {
+    display: flex;
+    // overflow-y: hidden;
+    // overflow-x: auto;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+    &::-webkit-scrollbar {
+      visibility: collapse;
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+      max-height: 100px;
+      margin-right: 10px;
+      transition: transform 450ms;
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
+    .large_row {
+      max-height: 200px;
+      &:hover {
+        transform: scale(1.09);
+      }
+    }
+  }
+}
+.footer {
+  background: red;
+  color: yellow;
+}
